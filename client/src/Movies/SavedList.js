@@ -9,7 +9,7 @@ const SavedList = props => (
     ))}
     
     <div className="home-button">
-      <Link to={`/movies/${props.id}`}>
+      <Link to="/">
         Home
       </Link>
     </div>

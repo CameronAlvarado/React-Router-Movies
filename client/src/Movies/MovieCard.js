@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import SavedList from "../Movies/SavedList";
 
 const MovieCard = props => {
   
   return (
     <div className="save-wrapper">
       <div className="movie-card">
-        <Link to={`/movies/${props.id}`}>
-          <h2>{props.title}</h2>
-        </Link>
+        <h2>
+          <Link to={`/movies/${props.id}`}>
+            {props.title}
+          </Link>
+        </h2>
         <div className="movie-director">
           Director: <em>{props.director}</em>
         </div>
@@ -28,7 +31,11 @@ const MovieCard = props => {
       )}
       </div>
       <div 
-      className="save-button">Save</div>
+      className="save-button"
+      onClick={() => props.save}
+      >
+        Save
+      </div>
     </div>
   )
 };

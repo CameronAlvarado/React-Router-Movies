@@ -34,13 +34,13 @@ const MovieList = props => {
   );
 }
 
-function MovieDetails({ movie }) {
-  const { title, director, metascore, stars } = movie;
+function MovieDetails({ movie, props }) {
+  // const { title, director, metascore, stars } = movie;
   return (
     
     <Route
       path="/" 
-      render={props => <MovieCard {...movie} />}
+      render={() => <MovieCard {...movie} />}
      />
 
     // <div className="movie-card">

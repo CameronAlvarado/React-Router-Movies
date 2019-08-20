@@ -6,7 +6,7 @@ import { Route } from "react-router-dom";
 const Movie = (props) => {
   const [movie, setMovie] = useState();
   const id = props.match.params.id;
-  console.log(props.match.params.id);
+  console.log(props.match.params);
 
   useEffect(() => {
     // change ^^^ that line and grab the id from the URL
@@ -25,21 +25,23 @@ const Movie = (props) => {
   },[id]);
  
   // Uncomment this only when you have moved on to the stretch goals
-  // const saveMovie = (props, movie) => {
-  //   const addToSavedList = props.addToSavedList;
-  //   addToSavedList(movie)
-  // }
+  const saveMovie = (props, movie) => {
+    const addToSavedList = props.addToSavedList;
+    addToSavedList(movie)
+  }
 
   if (!movie) {
     return <div>Loading movie information...</div>;
   }
  
-  const { title, director, metascore, stars } = movie;
+  // const { title, director, metascore, stars } = movie;
   return (
 
     <Route
     path="/" 
-    render={props => <MovieCard {...movie} />}
+    render={props => <MovieCard 
+      {...movie} 
+      save={saveMovie()} />}
    />
     // <div className="save-wrapper">
     //   <div className="movie-card">

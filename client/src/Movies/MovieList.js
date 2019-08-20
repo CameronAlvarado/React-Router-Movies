@@ -5,6 +5,7 @@ import MovieCard from "../Movies/MovieCard";
 
 const MovieList = props => {
   const [movies, setMovies] = useState([])
+  
   useEffect(() => {
     const getMovies = () => {
       axios
@@ -39,7 +40,7 @@ function MovieDetails({ movie }) {
     
     <Route
       path="/" 
-      render={props => <MovieCard {...props} />}
+      render={props => <MovieCard {...movie} />}
      />
 
     // <div className="movie-card">

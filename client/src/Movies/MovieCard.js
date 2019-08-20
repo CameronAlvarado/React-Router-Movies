@@ -6,7 +6,9 @@ const MovieCard = props => {
   return (
     <div className="save-wrapper">
       <div className="movie-card">
-        <h2>{props.title}</h2>
+        <Link to={`/movies/${props.id}`}>
+          <h2>{props.title}</h2>
+        </Link>
         <div className="movie-director">
           Director: <em>{props.director}</em>
         </div>

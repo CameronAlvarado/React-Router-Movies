@@ -14,6 +14,7 @@ const movies = [
 		director: 'Francis Ford Coppola',
 		metascore: 100,
 		stars: ['Marlon Brando', 'Al Pacino', 'Robert Duvall'],
+		cover: 'https://jonyonson.github.io/images/movies/godfather.jpg'
 	},
 	{
 		id: 1,
@@ -21,6 +22,7 @@ const movies = [
 		director: 'George Lucas',
 		metascore: 92,
 		stars: ['Mark Hamill', 'Harrison Ford', 'Carrie Fisher'],
+		cover: 'https://jonyonson.github.io/images/movies/starwars.jpg'
 	},
 	{
 		id: 2,
@@ -28,6 +30,7 @@ const movies = [
 		director: 'Peter Jackson',
 		metascore: 92,
 		stars: ['Elijah Wood', 'Ian McKellen', 'Orlando Bloom'],
+		cover: 'https://jonyonson.github.io/images/movies/lordoftherings.jpg'
 	},
 	{
 		id: 3,
@@ -35,6 +38,7 @@ const movies = [
 		director: 'James Cameron',
 		metascore: 94,
 		stars: ['Arnold Schwarzenegger', 'Edward Furlong', 'Linda Hamilton'],
+		cover: 'https://jonyonson.github.io/images/movies/t2.jpg'
 	},
 	{
 		id: 4,
@@ -42,6 +46,7 @@ const movies = [
 		director: 'The Farely Brothers',
 		metascore: 76,
 		stars: ['Jim Carrey', 'Jeff Daniels', 'Lauren Holly'],
+		cover: 'https://jonyonson.github.io/images/movies/dumbanddumber.jpg'
 	},
 	{
 		id: 5,
@@ -49,6 +54,7 @@ const movies = [
 		director: 'George P. Cosmatos',
 		metascore: 89,
 		stars: ['Kurt Russell', 'Bill Paxton', 'Sam Elliot'],
+		cover: 'https://jonyonson.github.io/images/movies/tombstone.jpg'
 	},
 ];
 

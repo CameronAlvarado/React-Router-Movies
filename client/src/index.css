@@ -14,6 +14,7 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  width: 75%;
 }
 
 .movie-director {
@@ -56,7 +57,7 @@ body {
 .save-button {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 105px;
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;

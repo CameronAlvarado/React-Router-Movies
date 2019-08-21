@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import SavedList from "../Movies/SavedList";
 
 const MovieCard = props => {
-  
+
   return (
-    <div className="save-wrapper">
       <div className="movie-card">
         <h2>
           <Link to={`/movies/${props.id}`}>
@@ -30,13 +28,6 @@ const MovieCard = props => {
       ))
       )}
       </div>
-      <div 
-      className="save-button"
-      onClick={() => props.save}
-      >
-        Save
-      </div>
-    </div>
   )
 };
 
